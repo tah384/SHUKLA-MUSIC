@@ -24,11 +24,11 @@ from logging import getLogger
 
 
 random_photo = [
-    "https://telegra.ph/file/1949480f01355b4e87d26.jpg",
-    "https://telegra.ph/file/3ef2cc0ad2bc548bafb30.jpg",
-    "https://telegra.ph/file/a7d663cd2de689b811729.jpg",
-    "https://telegra.ph/file/6f19dc23847f5b005e922.jpg",
-    "https://telegra.ph/file/2973150dd62fd27a3a6ba.jpg",
+    "https://graph.org/file/b9f398a68d5eef5f5960a.jpg",
+    "https://graph.org/file/ab71c8ccc97640412388c.jpg",
+    "https://graph.org/file/2ebd2aa7e1b3cab64552f.jpg",
+    "https://graph.org/file/ab71c8ccc97640412388c.jpg",
+    "https://graph.org/file/b9f398a68d5eef5f5960a.jpg",
 ]
 # --------------------------------------------------------------------------------- #
 
@@ -160,7 +160,7 @@ async def greet_new_member(_, member: ChatMemberUpdated):
                 pic, user.first_name, member.chat.title, user.id, user.username
             )
             button_text = "๏ 𝐕ɪᴇᴡ 𝐍ᴇᴡ 𝐌ᴇᴍʙᴇʀ ๏"
-            add_button_text = "🤫 𝐂𝐇𝐔𝐑𝐀 𝐋𝐎 𝐌𝐔𝐉𝐄 🤫"
+            add_button_text = "🤫 𝑀𝑅 𝑈𝑁𝐸𝑋 MEMMBER 🤫"
             deep_link = f"tg://openmessage?user_id={user.id}"
             add_link = f"https://t.me/{app.username}?startgroup=true"
             temp.MELCOW[f"welcome-{member.chat.id}"] = await app.send_photo(
