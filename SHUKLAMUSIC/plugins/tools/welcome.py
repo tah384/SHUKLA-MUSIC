@@ -24,11 +24,11 @@ from logging import getLogger
 
 
 random_photo = [
-    "https://graph.org/file/b9f398a68d5eef5f5960a.jpg",
-    "https://graph.org/file/ab71c8ccc97640412388c.jpg",
-    "https://graph.org/file/2ebd2aa7e1b3cab64552f.jpg",
-    "https://graph.org/file/ab71c8ccc97640412388c.jpg",
-    "https://graph.org/file/b9f398a68d5eef5f5960a.jpg",
+    "https://telegra.ph/file/7063e3b0eac98dcc5734e.jpg",
+    "https://telegra.ph/file/35f71c3ebde68a5d7fc23.jpg",
+    "https://telegra.ph/file/181715eb83d6b2dc4c1a1.jpg",
+    "https://telegra.ph/file/3e8be4617f67d7369b44a.jpg",
+    "https://telegra.ph/file/ed0b0c4bdba0e5edae53c.jpg",
 ]
 # --------------------------------------------------------------------------------- #
 
