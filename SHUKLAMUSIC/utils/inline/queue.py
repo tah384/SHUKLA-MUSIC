@@ -67,10 +67,10 @@ def queue_back_markup(_, CPLAY):
 def aq_markup(_, chat_id):
     buttons = [
         [
-            InlineKeyboardButton(text="𝐁", callback_data=f"ADMIN Resume|{chat_id}"),
-            InlineKeyboardButton(text="𝐀", callback_data=f"ADMIN Pause|{chat_id}"),
-            InlineKeyboardButton(text="𝐁", callback_data=f"ADMIN Skip|{chat_id}"),
-            InlineKeyboardButton(text="𝐘", callback_data=f"ADMIN Stop|{chat_id}"),
+            InlineKeyboardButton(text="R▷", callback_data=f"ADMIN Resume|{chat_id}"),
+            InlineKeyboardButton(text="P।। ", callback_data=f"ADMIN Pause|{chat_id}"),
+            InlineKeyboardButton(text="S▷▷।", callback_data=f"ADMIN Skip|{chat_id}"),
+            InlineKeyboardButton(text="S□", callback_data=f"ADMIN Stop|{chat_id}"),
         ],
         [InlineKeyboardButton(text=_["CLOSE_BUTTON"], callback_data="close")],
     ]
