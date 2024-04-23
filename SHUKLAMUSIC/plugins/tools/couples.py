@@ -14,8 +14,8 @@ from SHUKLAMUSIC.mongo.couples_db import _get_image, get_couple
 POLICE = [
     [
         InlineKeyboardButton(
-            text="𐏓𝐑ᴇᴅ ᯓ⵿⵿⵿⵿𝐙ᴏɴᴇ ꯭🍷࿐",
-            url=f"https://t.me/l_RED_l_ZONE_l",
+            text="𝑀𝑅 𝑈𝑁𝐸𝑋",
+            url=f"https://t.me/Quiz2xf",
         ),
     ],
 ]
