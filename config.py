@@ -53,7 +53,7 @@ HEROKU_API_KEY = getenv("HEROKU_API_KEY")
 # ----------------------------------------------------------------
 UPSTREAM_REPO = getenv(
     "UPSTREAM_REPO",
-    "https://github.com/KING0712/QUEEN_MUSIC",
+    "https://github.com/wwwlbs22/ARTISTST_STYLE_MUSIC",
 )
 UPSTREAM_BRANCH = getenv("UPSTREAM_BRANCH", "main")
 GIT_TOKEN = getenv(
@@ -67,8 +67,8 @@ GIT_TOKEN = getenv(
 
 # ------------------------------------------------------------------------
 # -------------------------------------------------------------------------
-SUPPORT_CHANNEL = getenv("SUPPORT_CHANNEL", "https://t.me/l_STAYLISH_l_DPZ_l")
-SUPPORT_CHAT = getenv("SUPPORT_CHAT", "https://t.me/l_RED_l_ZONE_l")
+SUPPORT_CHANNEL = getenv("SUPPORT_CHANNEL", "https://t.me/LINKS_CHANNELL")
+SUPPORT_CHAT = getenv("SUPPORT_CHAT", "https://t.me/Quiz2xf")
 # ------------------------------------------------------------------------------
 # -------------------------------------------------------------------------------
 
@@ -141,21 +141,21 @@ confirmer = {}
 # ------------------------------------------------------------------------
 # ------------------------------------------------------------------------
 START_IMG_URL = getenv(
-    "START_IMG_URL", "https://graph.org//file/6498f54284a4dcd3b4eb9.jpg"
+    "START_IMG_URL", "https://graph.org/file/ab71c8ccc97640412388c.jpg"
 )
 PING_IMG_URL = getenv(
-    "PING_IMG_URL", "https://graph.org//file/5be677d49aa2e5c13cf75.jpg"
+    "PING_IMG_URL", "https://graph.org/file/b9f398a68d5eef5f5960a.jpg"
 )
-PLAYLIST_IMG_URL = "https://graph.org//file/5be677d49aa2e5c13cf75.jpg"
-STATS_IMG_URL = "https://graph.org//file/5be677d49aa2e5c13cf75.jpg"
-TELEGRAM_AUDIO_URL = "https://graph.org//file/5be677d49aa2e5c13cf75.jpg"
-TELEGRAM_VIDEO_URL = "https://graph.org//file/5be677d49aa2e5c13cf75.jpg"
-STREAM_IMG_URL = "https://graph.org//file/5be677d49aa2e5c13cf75.jpg"
-SOUNCLOUD_IMG_URL = "https://graph.org//file/5be677d49aa2e5c13cf75.jpg"
-YOUTUBE_IMG_URL = "https://telegra.ph/file/4dc854f961cd3ce46899b.jpg"
-SPOTIFY_ARTIST_IMG_URL = "https://graph.org//file/5be677d49aa2e5c13cf75.jpg"
-SPOTIFY_ALBUM_IMG_URL = "https://graph.org//file/5be677d49aa2e5c13cf75.jpg"
-SPOTIFY_PLAYLIST_IMG_URL = "https://graph.org//file/5be677d49aa2e5c13cf75.jpg"
+PLAYLIST_IMG_URL = "https://graph.org/file/2ebd2aa7e1b3cab64552f.jpg"
+STATS_IMG_URL = "https://graph.org/file/b9f398a68d5eef5f5960a.jpg"
+TELEGRAM_AUDIO_URL = "https://graph.org/file/ab71c8ccc97640412388c.jpg"
+TELEGRAM_VIDEO_URL = "https://graph.org/file/2ebd2aa7e1b3cab64552f.jpg"
+STREAM_IMG_URL = "https://graph.org/file/b9f398a68d5eef5f5960a.jpg"
+SOUNCLOUD_IMG_URL = "https://graph.org/file/ab71c8ccc97640412388c.jpg"
+YOUTUBE_IMG_URL = "https://graph.org/file/b9f398a68d5eef5f5960a.jpg"
+SPOTIFY_ARTIST_IMG_URL = "https://graph.org/file/2ebd2aa7e1b3cab64552f.jpg"
+SPOTIFY_ALBUM_IMG_URL = "https://graph.org/file/b9f398a68d5eef5f5960a.jpg"
+SPOTIFY_PLAYLIST_IMG_URL = "https://graph.org/file/ab71c8ccc97640412388c.jpg"
 
 # ------------------------------------------------------------------------
 # ------------------------------------------------------------------------
