@@ -1,14 +1,14 @@
 <h2 align="center">
-    ─「 ˹𝐐ᴜᴇᴇɴ 𝗢𝗙𝗙 𝐌ᴜsɪᴄ˼ ♪ 」─
+    ─「 𝘿𝙀𝙑𝙄𝙇 ✘ 𝙈𝙐𝙎𝙄𝘾 」─
 
 </h2>
 
-[![Typing SVG](https://readme-typing-svg.herokuapp.com/?lines=ㅤ+𝐖𝐄𝐋𝐂𝐎𝐌𝐄+𝐓𝐎+𝐋𝐎𝐕𝐄𝐋𝐘+𝐌𝐔𝐒𝐈𝐂+𝐑𝐄𝐏𝐎;ㅤ+𝚃𝙷𝙸𝚂+𝙸𝚂+𝙰+𝙰𝙳𝚅𝙰𝙽𝙲𝙴+𝙼𝚄𝚂𝙸𝙲+𝙱𝙾𝚃+🔥;𝙿𝙾𝚆𝙴𝚁𝙴𝙳+𝙱𝚈+☞+𝗗𝗘𝗩𝗜𝗟+𝗢𝗣+😈)](https://github.com/wwwlbs22/ARTISTST_STYLE_MUSIC)
+[![Typing SVG](https://readme-typing-svg.herokuapp.com/?lines=ㅤ+𝐖𝐄𝐋𝐂𝐎𝐌𝐄+𝐓𝐎+𝐋𝐎𝐕𝐄𝐋𝐘+𝐌𝐔𝐒𝐈𝐂+𝐑𝐄𝐏𝐎;ㅤ+𝚃𝙷𝙸𝚂+𝙸𝚂+𝙰+𝙰𝙳𝚅𝙰𝙽𝙲𝙴+𝙼𝚄𝚂𝙸𝙲+𝙱𝙾𝚃+🔥;𝙿𝙾𝚆𝙴𝚁𝙴𝙳+𝙱𝚈+☞+𝗗𝗘𝗩𝗜𝗟+𝗢𝗣+😈)](https://github.com/INDIANCODERS-1/SHUKLA-MUSIC)
 
 
 
 <p align="center">
-  <img src="https://telegra.ph/file/c0465bd13875b249a9a8f.jpg">
+  <img src="https://graph.org/file/c09d3c38d63265a73968a.jpg">
 </p>
 
 
@@ -26,4 +26,4 @@
 </h3>
 
 
-<p align="center"><a href="https://dashboard.heroku.com/new?template=https://github.com/wwwlbs22/ARTISTST_STYLE_MUSIC"> <img src="https://telegra.ph/file/5c6425366736e86e0b0b8.jpg" width="520" height="198.45"/></a></p>
+<p align="center"><a href="https://dashboard.heroku.com/new?template=https://github.com/INDIANCODERS-1/SHUKLA-MUSIC"> <img src="https://graph.org/file/ae4827c40dd834ad0b925.jpg" width="520" height="198.45"/></a></p>
