@@ -1,5 +1,5 @@
 <h2 align="center">
-    ─「 𝘿𝙀𝙑𝙄𝙇 ✘ 𝙈𝙐𝙎𝙄𝘾 」─
+    ─「 SHUKLA ✘ MUSIC 」─
 
 </h2>
 
