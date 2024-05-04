@@ -19,7 +19,7 @@ from SHUKLAMUSIC import app, userbot
 from SHUKLAMUSIC.misc import SUDOERS
 from pyrogram import * 
 from pyrogram.types import *
-from SHUKLAMUSIC.utils.shukla_ban import admin_filter
+from SHUKLAMUSIC.utils.shukla_ban.py import admin_filter
 import random
 from pyrogram import Client, filters
 from pyrogram.types import ChatJoinRequest, InlineKeyboardButton, InlineKeyboardMarkup
@@ -33,7 +33,7 @@ from pyrogram.enums import ParseMode
 from pyrogram import *
 from pyrogram.types import *
 from logging import getLogger
-from SHUKLAMUSIC.utils.shukla_ban import admin_filter
+from SHUKLAMUSIC.utils.shukla_ban.py import admin_filter
 import os
 from SHUKLAMUSIC.misc import SUDOERS
 from PIL import ImageDraw, Image, ImageFont, ImageChops
