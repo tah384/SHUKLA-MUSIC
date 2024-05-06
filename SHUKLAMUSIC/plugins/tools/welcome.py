@@ -1,25 +1,10 @@
 from SHUKLAMUSIC import app
-from pyrogram import Client, filters
-from pyrogram.enums import ChatMemberStatus
-from pyrogram.errors import (
-    ChatAdminRequired,
-    InviteRequestSent,
-    UserAlreadyParticipant,
-    UserNotParticipant,
-)
 from pyrogram.errors import RPCError
 from pyrogram.types import ChatMemberUpdated, InlineKeyboardMarkup, InlineKeyboardButton
 from os import environ
 from typing import Union, Optional
 from PIL import Image, ImageDraw, ImageFont
 from os import environ
-import requests
-import random
-from SHUKLAMUSIC import app, userbot
-from SHUKLAMUSIC.misc import SUDOERS
-from pyrogram import * 
-from pyrogram.types import *
-from SHUKLAMUSIC.utils.Shukla_ban import admin_filter
 import random
 from pyrogram import Client, filters
 from pyrogram.types import ChatJoinRequest, InlineKeyboardButton, InlineKeyboardMarkup
@@ -30,12 +15,8 @@ from PIL import Image, ImageDraw, ImageFont, ImageEnhance
 from asyncio import sleep
 from pyrogram import filters, Client, enums
 from pyrogram.enums import ParseMode
-from pyrogram import *
-from pyrogram.types import *
 from logging import getLogger
 from SHUKLAMUSIC.utils.Shukla_ban import admin_filter
-import os
-from SHUKLAMUSIC.misc import SUDOERS
 from PIL import ImageDraw, Image, ImageFont, ImageChops
 from pyrogram import *
 from pyrogram.types import *
@@ -43,11 +24,11 @@ from logging import getLogger
 
 
 random_photo = [
-    "https://telegra.ph/file/1949480f01355b4e87d26.jpg",
-    "https://telegra.ph/file/3ef2cc0ad2bc548bafb30.jpg",
-    "https://telegra.ph/file/a7d663cd2de689b811729.jpg",
-    "https://telegra.ph/file/6f19dc23847f5b005e922.jpg",
-    "https://telegra.ph/file/2973150dd62fd27a3a6ba.jpg",
+    "https://telegra.ph/file/7063e3b0eac98dcc5734e.jpg",
+    "https://telegra.ph/file/35f71c3ebde68a5d7fc23.jpg",
+    "https://telegra.ph/file/181715eb83d6b2dc4c1a1.jpg",
+    "https://telegra.ph/file/3e8be4617f67d7369b44a.jpg",
+    "https://telegra.ph/file/ed0b0c4bdba0e5edae53c.jpg",
 ]
 # --------------------------------------------------------------------------------- #
 
@@ -96,57 +77,26 @@ def circle(pfp, size=(500, 500), brightness_factor=10):
     pfp.putalpha(mask)
     return pfp
 
-
-
-
 def welcomepic(pic, user, chatname, id, uname, brightness_factor=1.3):
     background = Image.open("SHUKLAMUSIC/assets/wel2.png")
     pfp = Image.open(pic).convert("RGBA")
     pfp = circle(pfp, brightness_factor=brightness_factor) 
-    pfp = pfp.resize((892, 880))
+    pfp = pfp.resize((1157, 1158))
     draw = ImageDraw.Draw(background)
-    font = ImageFont.truetype('SHUKLAMUSIC/assets/font.ttf', size=95)
-    welcome_font = ImageFont.truetype('SHUKLAMUSIC/assets/font.ttf', size=45)
-    
-    # Draw user's name with shining red fill and dark saffron border
-    draw.text((1770, 1015), f': {user}', fill=(0, 0, 142), font=font)
-    draw.text((1770, 1015), f': {user}', fill=None, font=font, stroke_fill=(255, 153, 51), stroke_width=6)
-    
-    # Draw user's id with shining blue fill and white border
-    draw.text((1530, 1230), f': {id}', fill=(0, 0, 139))
-    draw.text((1530, 1230), f': {id}', fill=None, font=font, stroke_fill=(255, 255, 255), stroke_width=0)
-    
-    # Draw user's username with white fill and green border
-    draw.text((2030, 1450), f': {uname}', fill=(0, 0, 145), font=font)
-    draw.text((2030, 1450), f': {uname}', fill=None, font=font, stroke_fill=(0, 128, 0), stroke_width=6)
-    
-    # Resize photo and position
-    pfp_position = (255, 323)
+    font = ImageFont.truetype('SHUKLAMUSIC/assets/font.ttf', size=110)
+    welcome_font = ImageFont.truetype('SHUKLAMUSIC/assets/font.ttf', size=60)
+    #draw.text((630, 540), f'ID: {id}', fill=(255, 255, 255), font=font)
+    #
+    draw.text((630, 300), f'NAME: {user}', fill=(255, 255, 255), font=font)
+    draw.text((630, 450), f'ID: {id}', fill=(255, 255, 255), font=font)
+#    draw.text((630, 150), f"{chatname}", fill=(225, 225, 225), font=welcome_font)
+    draw.text((630, 230), f"USERNAME : {uname}", fill=(255, 255, 255), font=font)
+
+    #
+    pfp_position = (48, 88)
     background.paste(pfp, pfp_position, pfp)
-
-    # Calculate circular outline coordinates
-    center_x = pfp_position[0] + pfp.width / 2
-    center_y = pfp_position[1] + pfp.height / 2
-    radius = min(pfp.width, pfp.height) / 2
-
-    # Draw circular outlines
-    draw.ellipse([(center_x - radius - 10, center_y - radius - 10),
-                  (center_x + radius + 10, center_y + radius + 10)],
-                 outline=(255, 153, 51), width=25)  # Saffron border
-
-    draw.ellipse([(center_x - radius - 20, center_y - radius - 20),
-                  (center_x + radius + 20, center_y + radius + 20)],
-                 outline=(255, 255, 255), width=25)  # White border
-
-    draw.ellipse([(center_x - radius - 30, center_y - radius - 30),
-                  (center_x + radius + 30, center_y + radius + 30)],
-                 outline=(0, 128, 0), width=25)  # Green border
-
     background.save(f"downloads/welcome#{id}.png")
     return f"downloads/welcome#{id}.png"
-
-
-
 
 
 @app.on_message(filters.command("welcome") & ~filters.private)
@@ -192,7 +142,7 @@ async def greet_new_member(_, member: ChatMemberUpdated):
     user = member.new_chat_member.user if member.new_chat_member else member.from_user
     
     # Add the modified condition here
-    if member.new_chat_member and not member.old_chat_member:
+    if member.new_chat_member and not member.old_chat_member and member.new_chat_member.status != "kicked":
     
         try:
             pic = await app.download_media(
@@ -209,24 +159,26 @@ async def greet_new_member(_, member: ChatMemberUpdated):
             welcomeimg = welcomepic(
                 pic, user.first_name, member.chat.title, user.id, user.username
             )
-            button_text = "๏ ᴠɪᴇᴡ ɴᴇᴡ ᴍᴇᴍʙᴇʀ ๏"
-            add_button_text = "๏ ᴋɪᴅɴᴀᴘ ᴍᴇ ๏"
+            button_text = "๏ 𝐕ɪᴇᴡ 𝐍ᴇᴡ 𝐌ᴇᴍʙᴇʀ ๏"
+            add_button_text = "🤫ᴀᴅᴅ ᴍᴇ ʙᴀʙʏ🤫"
             deep_link = f"tg://openmessage?user_id={user.id}"
             add_link = f"https://t.me/{app.username}?startgroup=true"
             temp.MELCOW[f"welcome-{member.chat.id}"] = await app.send_photo(
                 member.chat.id,
                 photo=welcomeimg,
                 caption=f"""
-**❅────✦ ᴡᴇʟᴄᴏᴍᴇ ✦────❅**
+**⎊────☵ 𝐖ᴇʟᴄᴏᴍᴇ ☵────⎊**
 
-▰▰▰▰▰▰▰▰▰▰▰▰▰
-**➻ ɴᴀᴍᴇ »** {user.mention}
-**➻ ɪᴅ »** `{user.id}`
-**➻ ᴜ_ɴᴀᴍᴇ »** @{user.username}
-**➻ ᴛᴏᴛᴀʟ ᴍᴇᴍʙᴇʀs »** {count}
-▰▰▰▰▰▰▰▰▰▰▰▰▰
+**▬▭▬▭▬▭▬▭▬▭▬▭**
 
-**❅─────✧❅✦❅✧─────❅**
+**☉ 𝐍ᴀᴍᴇ ⧽** {user.mention}
+**☉ 𝐈ᴅ ⧽** `{user.id}`
+**☉ 𝐔_𝐍ᴀᴍᴇ ⧽** @{user.username}
+**☉ 𝐓ᴏᴛᴀʟ 𝐌ᴇᴍʙᴇʀs ⧽** {count}
+**@ITZ_IND_CODER**
+**▬▭▬▭▬▭▬▭▬▭▬▭**
+
+**⎉────▢✭ 侖 ✭▢────⎉**
 """,
                 reply_markup=InlineKeyboardMarkup([
                     [InlineKeyboardButton(button_text, url=deep_link)],
@@ -235,6 +187,3 @@ async def greet_new_member(_, member: ChatMemberUpdated):
             )
         except Exception as e:
             LOGGER.error(e)
-
-
-      
