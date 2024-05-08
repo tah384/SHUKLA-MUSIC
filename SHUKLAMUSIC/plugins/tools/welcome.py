@@ -49,7 +49,7 @@ def welcomepic(pic, user, chatname, id, uname):
     background = Image.open("SHUKLAMUSIC/assets/wel2.png")
     pfp = Image.open(pic).convert("RGBA")
     pfp = circle(pfp)
-    pfp = pfp.resize((1157, 1158))
+    pfp = pfp.resize((500, 501))
     draw = ImageDraw.Draw(background)
     font = ImageFont.truetype('SHUKLAMUSIC/assets/font.ttf', size=110)
     welcome_font = ImageFont.truetype('SHUKLAMUSIC/assets/font.ttf', size=60)
