@@ -90,11 +90,14 @@ async def greet_group(_, member: ChatMemberUpdated):
             photo=welcomeimg,
             caption=f"""
 Wᴇʟᴄᴏᴍᴇ Tᴏ {member.chat.title}
-➖➖➖➖➖➖➖➖➖➖➖➖
+▰▱▱▱▱▱▱▱▱▱▱▱▱▱▱▱▱▰
+
 Nᴀᴍᴇ ✧ {user.mention}
 Iᴅ ✧ {user.id}
 Usᴇʀɴᴀᴍᴇ ✧ @{user.username}
-➖➖➖➖➖➖➖➖➖➖➖➖
+❖ ᴘᴏᴡᴇʀᴇᴅ ʙʏ ➥ @ITZ_IND_CODER
+
+▰▱▱▱▱▱▱▱▱▱▱▱▱▱▱▱▱▰
 """,
             reply_markup=InlineKeyboardMarkup([[InlineKeyboardButton(f"⦿ ᴀᴅᴅ ᴍᴇ ⦿", url=f"https://t.me/Alone_Dil_bot?startgroup=true")]])
         )
@@ -112,9 +115,11 @@ async def bot_wel(_, message):
         if u.id == app.me.id:
             await app.send_message(LOG_CHANNEL_ID, f"""
 NEW GROUP
-➖➖➖➖➖➖➖➖➖➖➖➖
+▰▱▱▱▱▱▱▱▱▱▱▱▱▱▱▱▱▰
+
 NAME: {message.chat.title}
 ID: {message.chat.id}
 USERNAME: @{message.chat.username}
-➖➖➖➖➖➖➖➖➖➖➖➖
+
+▰▱▱▱▱▱▱▱▱▱▱▱▱▱▱▱▱▰
 """)
