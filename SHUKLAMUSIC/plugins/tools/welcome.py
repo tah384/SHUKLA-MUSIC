@@ -99,7 +99,7 @@ Usᴇʀɴᴀᴍᴇ ✧ @{user.username}
 
 ▰▱▱▱▱▱▱▱▱▱▱▱▱▱▱▱▱▰
 """,
-            reply_markup=InlineKeyboardMarkup([[InlineKeyboardButton(f"⦿ ᴀᴅᴅ ᴍᴇ ⦿", url=f"https://t.me/Alone_Dil_bot?startgroup=true")]])
+            reply_markup=InlineKeyboardMarkup([[InlineKeyboardButton(f"❖ ᴘᴏᴡᴇʀᴇᴅ ʙʏ", url=f"https://t.me/ITZ_IND_CODER")]])
         )
     except Exception as e:
         LOGGER.error(e)
