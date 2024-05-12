@@ -1,3 +1,4 @@
+from SHUKLAMUSIC import app
 from pyrogram import Client, filters
 from pyrogram.enums import ChatMemberStatus
 from pyrogram.errors import (
@@ -14,7 +15,7 @@ from PIL import Image, ImageDraw, ImageFont
 from os import environ
 import requests
 import random
-from SHUKLAMUSIC import userbot
+from SHUKLAMUSIC import app, userbot
 from SHUKLAMUSIC.misc import SUDOERS
 from pyrogram import *
 from pyrogram.types import *
@@ -178,13 +179,13 @@ def welcomepic(pic, user, chatname, id, uname, brightness_factor=1.3):
     return f"downloads/welcome#{id}.png"
 
 
-@Client.on_message(filters.command("welcome") & ~filters.private)
-async def auto_state(client: Client, message):  # Added 'message' as a parameter
+@app.on_message(filters.command("welcome") & ~filters.private)
+async def auto_state(_, message):
     usage = "**ᴜsᴀɢᴇ:**\n**⦿ /welcome [on|off]**"
     if len(message.command) == 1:
         return await message.reply_text(usage)
     chat_id = message.chat.id
-    user = await client.get_chat_member(message.chat.id, message.from_user.id)
+    user = await app.get_chat_member(message.chat.id, message.from_user.id)
     if user.status in (
         enums.ChatMemberStatus.ADMINISTRATOR,
         enums.ChatMemberStatus.OWNER,
@@ -213,12 +214,10 @@ async def auto_state(client: Client, message):  # Added 'message' as a parameter
         await message.reply("**sᴏʀʀʏ ᴏɴʟʏ ᴀᴅᴍɪɴs ᴄᴀɴ ᴇɴᴀʙʟᴇ ᴡᴇʟᴄᴏᴍᴇ ɴᴏᴛɪғɪᴄᴀᴛɪᴏɴ!**")
 
 
-@Client.on_chat_member_updated(filters.group, group=-13)
-async def greet_new_member(
-    client: Client, member: ChatMemberUpdated
-):  # Added 'client' and 'member' as parameters
+@app.on_chat_member_updated(filters.group, group=-3)
+async def greet_new_member(_, member: ChatMemberUpdated):
     chat_id = member.chat.id
-    count = await client.get_chat_members_count(chat_id)
+    count = await app.get_chat_members_count(chat_id)
     A = await wlcm.find_one(chat_id)
     if A:
         return
@@ -229,7 +228,7 @@ async def greet_new_member(
     if member.new_chat_member and not member.old_chat_member:
 
         try:
-            pic = await client.download_media(
+            pic = await app.download_media(
                 user.photo.big_file_id, file_name=f"pp{user.id}.png"
             )
         except AttributeError:
@@ -244,10 +243,10 @@ async def greet_new_member(
                 pic, user.first_name, member.chat.title, user.id, user.username
             )
             button_text = "๏ ᴠɪᴇᴡ ɴᴇᴡ ᴍᴇᴍʙᴇʀ ๏"
-            add_button_text = "❖ ᴘᴏᴡᴇʀᴇᴅ ʙʏ"
-            deep_link = f"{user.id}"
+            add_button_text = "❖ ᴘᴏᴡᴇʀᴇᴅ ʙʏ "
+            deep_link = f"tg://openmessage?user_id={user.id}"
             add_link = f"https://t.me/ITZ_IND_CODER"
-            temp.MELCOW[f"welcome-{member.chat.id}"] = await client.send_photo(
+            temp.MELCOW[f"welcome-{member.chat.id}"] = await app.send_photo(
                 member.chat.id,
                 photo=welcomeimg,
                 caption=f"""
@@ -266,7 +265,7 @@ async def greet_new_member(
 """,
                 reply_markup=InlineKeyboardMarkup(
                     [
-                        [InlineKeyboardButton(button_text, user_id=deep_link)],
+                        [InlineKeyboardButton(button_text, url=deep_link)],
                         [InlineKeyboardButton(text=add_button_text, url=add_link)],
                     ]
                 ),
