@@ -6,7 +6,6 @@ aiohttp
 asyncio 
 beautifulsoup4
 daxxhub
-deepai
 python-whois
 dnspython
 ffmpeg-python
@@ -55,3 +54,4 @@ img2pdf
 cloudscraper
 pycryptodome
 opencv-python
+async_pymongo
