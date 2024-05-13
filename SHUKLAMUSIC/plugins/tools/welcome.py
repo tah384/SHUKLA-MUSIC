@@ -30,7 +30,7 @@ import asyncio
 import time
 from SHUKLAMUSIC.utils.database import add_served_chat
 from pyrogram.types import Message, InlineKeyboardMarkup, InlineKeyboardButton
-from DAXXMUSIC.utils.database import get_assistant
+from SHUKLAMUSIC.utils.database import get_assistant
 import asyncio
 from SHUKLAMUSIC.misc import SUDOERS
 from SHUKLAMUSIC.mongo.afkdb import PROCESS
