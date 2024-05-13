@@ -1,4 +1,4 @@
-from AnonXMusic.CuteDb import *
+from SHUKLAMUSIC.CuteDb import *
 
 wlcm = dbname["welcome"]
 
