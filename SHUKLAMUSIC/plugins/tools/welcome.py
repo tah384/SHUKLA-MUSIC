@@ -41,7 +41,7 @@ def welcomepic(pic, user, chat, id, uname):
         (450, 450)
     ) 
     draw = ImageDraw.Draw(background)
-    font = ImageFont.truetype('SHUKLAMUSIC/assets/font.ttf', size=55)
+    font = ImageFont.truetype('SHUKLAMUSIC/assets/font.ttf', size=52)
     font2 = ImageFont.truetype('SHUKLAMUSIC/assets/font.ttf', size=90)
     draw.text((65, 250), f'NAME : {unidecode(user)}', fill="white", font=font)
     draw.text((65, 340), f'ID : {id}', fill="white", font=font)
@@ -120,14 +120,17 @@ async def greet_group(_, member: ChatMemberUpdated):
             member.chat.id,
             photo=welcomeimg,
             caption= f"""
-ㅤㅤㅤ◦•●◉✿ ᴡᴇʟᴄᴏᴍᴇ ʙᴀʙʏ ✿◉●•◦
-▰▱▱▱▱▱▱▱▱▱▱▱▱▱▱▱▱▰
+  ᴡᴇʟᴄᴏᴍᴇ ʙᴀʙʏ
+▱▱▱▱▱▰
+▰▱▱▱▱▱▱▱▱▱▱▱
 
 ● ɴᴀᴍᴇ ➥  {user.mention}
 ● ᴜsᴇʀɴᴀᴍᴇ ➥  @{user.username}
 ● ᴜsᴇʀ ɪᴅ ➥  {user.id}
+Sᴜᴘᴘᴏʀᴛ➥ @THE_IND_CODERS
 
-▰▱▱▱▱▱▱▱▱▱▱▱▱▱▱▱▱▰
+▰▱▱▱▱▱▱▱▱▱▱▱
+▱▱▱▱▱▰
 """,
 reply_markup=InlineKeyboardMarkup(
 [
