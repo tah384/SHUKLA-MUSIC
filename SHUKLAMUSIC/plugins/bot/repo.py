@@ -80,11 +80,11 @@ InlineKeyboardButton("", url=f""),
 # --------------
 
 
-@app.on_message(filters.command("rpop0999", prefixes="#"))
+@app.on_message(filters.command("repo", prefixes="#"))
 @capture_err
 async def repo(_, message):
     async with httpx.AsyncClient() as client:
-        response = await client.get("https://api.github.com/repos/wwwlbs22/ARTISTST_STYLE_MUSIC/contributors")
+        response = await client.get("https://api.github.com/repos/INDIANCODERS-1/SHUKLA-MUSIC/contributors")
     
     if response.status_code == 200:
         users = response.json()
@@ -94,7 +94,7 @@ async def repo(_, message):
             list_of_users += f"{count}. [{user['login']}]({user['html_url']})\n"
             count += 1
 
-        text = f"""[𝖱𝖤𝖯𝖮 𝖫𝖨𝖭𝖪](https://github.com/wwwlbs22/ARTISTST_STYLE_MUSIC) | [UPDATES](https://t.me/ARTIST_i_NETWORK)
+        text = f"""[𝖱𝖤𝖯𝖮 𝖫𝖨𝖭𝖪](https://github.com/INDIANCODERS-1/SHUKLA-MUSIC) | [UPDATES](https://t.me/theind_coders) | [𝖮𝗐𝗇𝖾𝗋](https://t.me/@ITZ_IND_CODER)
 | 𝖢𝖮𝖭𝖳𝖱𝖨𝖡𝖴𝖳𝖮𝖱𝖲 |
 ----------------
 {list_of_users}"""
