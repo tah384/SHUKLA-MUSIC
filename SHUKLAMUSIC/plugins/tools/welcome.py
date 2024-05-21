@@ -43,9 +43,9 @@ def welcomepic(pic, user, chat, id, uname):
     draw = ImageDraw.Draw(background)
     font = ImageFont.truetype('SHUKLAMUSIC/assets/font.ttf', size=49)
     font2 = ImageFont.truetype('SHUKLAMUSIC/assets/font.ttf', size=90)
-    draw.text((65, 250), f'NAME : {unidecode(user)}', fill="white", font=font)
-    draw.text((65, 340), f'ID : {id}', fill="white", font=font)
-    draw.text((65, 430), f"USERNAME : {uname}", fill="white",font=font)
+    draw.text((65, 250), f'NAME : {unidecode(user)}', fill="black", font=font)
+    draw.text((65, 340), f'ID : {id}', fill="black", font=font)
+    draw.text((65, 430), f"USERNAME : {uname}", fill="black",font=font)
     pfp_position = (767, 133)  
     background.paste(pfp, pfp_position, pfp)  
     background.save(
