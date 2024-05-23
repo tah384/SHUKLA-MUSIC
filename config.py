@@ -23,9 +23,11 @@ BOT_NAME = getenv("BOT_NAME" , "DEVIL")
 ASSUSERNAME = getenv("ASSUSERNAME" , "IDK")
 # ---------------------------------------------------------
 GPT_API = os.environ.get("GPT_API", "https://chatgpt.apinepdev.workers.dev/?question={a}")
+# ---------------------------------------------------------
 DEEP_API = os.environ.get("DEEP_API", "32c65eef-e2a1-4a5f-8d6c-50ae03e83181")
+# ---------------------------------------------------------
 DAXX_API = os.environ.get("DAXX_API", "DAXX_API-Na?*oqona191equAb_robot182")
-
+# ---------------------------------------------------------
 #---------------------------------------------------------------
 #---------------------------------------------------------------
 MONGO_DB_URI = getenv("MONGO_DB_URI", None)
