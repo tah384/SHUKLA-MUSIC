@@ -16,6 +16,7 @@ from config import API_ID, API_HASH
 from SHUKLAMUSIC import app
 from SHUKLAMUSIC.misc import SUDOERS
 from SHUKLAMUSIC.utils.database import get_assistant
+from SHUKLAMUSIC.CuteDb.clonedb import clonebotdb
 from config import LOGGER_ID
 
 CLONES = set()
@@ -79,7 +80,7 @@ async def clone_txt(client, message):
         except BaseException as e:
             logging.exception("**Error while cloning bot.**")
             await mi.edit_text(
-                f"⚠️ <b>ᴇʀʀᴏʀ:</b>\n\n<code>{e}</code>\n\n**ᴋɪɴᴅʟʏ ғᴏᴡᴀʀᴅ ᴛʜɪs ᴍᴇssᴀɢᴇ ᴛᴏ @vk_zone ᴛᴏ ɢᴇᴛ ᴀssɪsᴛᴀɴᴄᴇ**"
+                f"⚠️ <b>ᴇʀʀᴏʀ:</b>\n\n<code>{e}</code>\n\n**ᴋɪɴᴅʟʏ ғᴏᴡᴀʀᴅ ᴛʜɪs ᴍᴇssᴀɢᴇ ᴛᴏ @THE_IND_CODERS ᴛᴏ ɢᴇᴛ ᴀssɪsᴛᴀɴᴄᴇ**"
             )
     else:
         await message.reply_text(
