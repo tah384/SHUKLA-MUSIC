@@ -15,7 +15,7 @@ from SHUKLAMUSIC.utils.database import get_assistant
 from config import API_ID, API_HASH
 from SHUKLAMUSIC import app
 from SHUKLAMUSIC.misc import SUDOERS
-from SHUKLAMUSIC.utils.database import get_assistant, clonebotdb
+from SHUKLAMUSIC.utils.database import get_assistant
 from config import LOGGER_ID
 
 CLONES = set()
