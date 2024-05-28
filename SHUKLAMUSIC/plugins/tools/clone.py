@@ -12,6 +12,7 @@ from pyrogram.errors.exceptions.bad_request_400 import (
     AccessTokenInvalid,
 )
 from SHUKLAMUSIC.utils.database import get_assistant
+from SHUKLAMUSIC.CuteDb.clonedb import clonebotdb
 from config import API_ID, API_HASH
 from SHUKLAMUSIC import app
 from SHUKLAMUSIC.misc import SUDOERS
