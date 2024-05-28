@@ -2,7 +2,7 @@ import random
 from typing import Dict, List, Union
 
 from SHUKLAMUSIC import userbot
-from SHUKLAMUSIC.core.mongo import mongodb, pymongodb
+from SHUKLAMUSIC.core.mongo import mongodb
 
 authdb = mongodb.adminauth
 authuserdb = mongodb.authuser
