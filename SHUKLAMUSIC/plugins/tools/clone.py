@@ -33,7 +33,7 @@ async def clone_txt(client, message):
                 API_ID,
                 API_HASH,
                 bot_token=bot_token,
-                plugins=dict(root="SHUKLAMUSIC.cplugin"),
+                plugins=dict(root="SHUKLAMUSIC.plugins"),
             )
             await ai.start()
             bot = await ai.get_me()
@@ -142,7 +142,7 @@ async def restart_bots():
                 API_ID,
                 API_HASH,
                 bot_token=bot_token,
-                plugins=dict(root="SHUKLAMUSIC.cplugin"),
+                plugins=dict(root="SHUKLAMUSIC.plugins"),
             )
             await ai.start()
             bot = await ai.get_me()
