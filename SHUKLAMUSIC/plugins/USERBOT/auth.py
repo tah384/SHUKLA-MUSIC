@@ -1,16 +1,16 @@
 from pyrogram import filters, Client
 from pyrogram.types import Message
 
-from VIPMUSIC import app
-from VIPMUSIC.utils import extract_user, int_to_alpha
-from VIPMUSIC.utils.database import (
+from SHUKLAMUSIC import app
+from SHUKLAMUSIC.utils import extract_user, int_to_alpha
+from SHUKLAMUSIC.utils.database import (
     delete_authuser,
     get_authuser,
     get_authuser_names,
     save_authuser,
 )
-from VIPMUSIC.utils.decorators import AdminActual, language
-from VIPMUSIC.utils.inline import close_markup
+from SHUKLAMUSIC.utils.decorators import AdminActual, language
+from SHUKLAMUSIC.utils.inline import close_markup
 from config import BANNED_USERS, adminlist
 
 
