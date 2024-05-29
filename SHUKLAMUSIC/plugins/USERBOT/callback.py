@@ -7,13 +7,13 @@ from pyrogram.errors import (
     UserAlreadyParticipant,
     UserNotParticipant,
 )
-from VIPMUSIC.utils.database import get_assistant
+from SHUKLAMUSIC.utils.database import get_assistant
 from pyrogram import filters, Client
 from pyrogram.types import InlineKeyboardButton, InlineKeyboardMarkup, CallbackQuery
-from VIPMUSIC import YouTube, app
-from VIPMUSIC.core.call import VIP
-from VIPMUSIC.misc import SUDOERS, db
-from VIPMUSIC.utils.database import (
+from SHUKLAMUSIC import YouTube, app
+from SHUKLAMUSIC.core.call import VIP
+from SHUKLAMUSIC.misc import SUDOERS, db
+from SHUKLAMUSIC.utils.database import (
     get_active_chats,
     get_lang,
     get_upvote_count,
@@ -27,9 +27,9 @@ from VIPMUSIC.utils.database import (
     is_muted,
     set_loop,
 )
-from VIPMUSIC.utils.decorators.language import languageCB
-from VIPMUSIC.utils.formatters import seconds_to_min
-from VIPMUSIC.utils.inline import (
+from SHUKLAMUSIC.utils.decorators.language import languageCB
+from SHUKLAMUSIC.utils.formatters import seconds_to_min
+from SHUKLAMUSIC.utils.inline import (
     close_markup,
     stream_markup,
     stream_markup_timer,
@@ -51,8 +51,8 @@ from VIPMUSIC.utils.inline import (
     queue_markup,
     panel_markup_1,
 )
-from VIPMUSIC.utils.stream.autoclear import auto_clean
-from VIPMUSIC.utils.thumbnails import get_thumb
+from SHUKLAMUSIC.utils.stream.autoclear import auto_clean
+from SHUKLAMUSIC.utils.thumbnails import get_thumb
 from config import (
     BANNED_USERS,
     SOUNCLOUD_IMG_URL,
