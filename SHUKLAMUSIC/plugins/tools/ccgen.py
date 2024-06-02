@@ -1,42 +1,33 @@
-import re
-from pyrogram import filters
-from SHUKLAMUSIC import app, SafoneAPI
+from ... import *
+from pyrogram import *
+from pyrogram.types import *
 
 
-
-
-@app.on_message(filters.command(["gen"], [".", "!", "/"]))
+@app.on_message(filters.command(["gen", "ccgen"], [".", "!", "/"]))
 async def gen_cc(client, message):
     if len(message.command) < 2:
-        return await message.reply_text("**ᴍᴀsᴛᴇʀ ɢɪᴠᴇ ᴍᴇ ᴘʀᴏᴠɪᴅᴇ ᴠᴀʟɪᴅ ʙɪɴ ɪ ᴡɪʟʟ ɢᴇɴᴇʀᴀᴛᴇ ᴄʀᴇᴅɪᴛ ᴄᴀʀᴅs**")
-
+        return await message.reply_text(
+            "Please Give Me a Bin To\nGenerate Cc ..."
+        )
     try:
         await message.delete()
     except:
         pass
-
-    aux = await message.reply_text("**sᴇɴsᴇɪ ᴡᴀɪᴛ \nɪ ᴡɪʟʟ ɢᴇɴᴇʀᴀᴛɪɴɢ...**")
-
-    data = message.text.split(maxsplit=1)[1].strip()
-
-    if not re.match(r"\d{6,}", data):
-        return await aux.edit("**ᴏᴏᴘs sᴇɴsᴇɪ ᴀʀᴇ ʏᴏᴜ sᴛᴜᴘɪᴅ. ᴡʜʏ ʏᴏᴜ ɢɪᴠɪɴɢ ʙɪɴ ɪɴ ᴡʀᴏɴɢ ғᴏʀᴍᴀᴛᴇ. **")
-
-    bin_number = data
-
+    aux = await message.reply_text("Generating ...")
+    bin = message.text.split(None, 1)[1]
+    if len(bin) < 6:
+        return await aux.edit("❌ Wrong Bin❗...")
     try:
-        resp = await safone.ccgen(bin_number, 10)
+        resp = await api.ccgen(bin, 10)
         cards = resp.liveCC
-
         await aux.edit(f"""
-**ʙɪɴ ⇾ {bin_number}**
-**ᴀᴍᴏᴜɴᴛ ⇾ 10**
-
-    
-﹝⌬﹞`{cards[0]}`\n﹝⌬﹞`{cards[1]}`\n﹝⌬﹞`{cards[2]}`
-﹝⌬﹞`{cards[3]}`\n﹝⌬﹞`{cards[4]}`\n﹝⌬﹞`{cards[5]}`
-﹝⌬﹞`{cards[6]}`\n﹝⌬﹞`{cards[7]}`\n﹝⌬﹞`{cards[8]}`
-﹝⌬﹞`{cards[9]}`
-""")
+💠 Some Live Generated CC:
+﹝⌬﹞{cards[0]}\n﹝⌬﹞{cards[1]}\n﹝⌬﹞{cards[2]}
+﹝⌬﹞{cards[3]}\n﹝⌬﹞{cards[4]}\n﹝⌬﹞{cards[5]}
+﹝⌬﹞{cards[6]}\n﹝⌬﹞{cards[7]}\n﹝⌬﹞{cards[8]}
+﹝⌬﹞{cards[9]}
+💳 Bin: {resp.results[0].bin}
+⏳ Time Took: {resp.took}\n\n"""
+        )
     except Exception as e:
-        return await aux.edit(f"**Error:** `{e}`")
+        return await aux.edit(f"Error: {e}")
