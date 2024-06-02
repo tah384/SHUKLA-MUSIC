@@ -1,6 +1,6 @@
 import re
 from pyrogram import filters
-from EQUROBOT import app, safone
+from SHUKLAMUSIC import app, safone
 
 
 
