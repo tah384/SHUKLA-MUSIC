@@ -12,7 +12,7 @@ load_dotenv()
 API_ID = int(getenv("API_ID"))
 API_HASH = getenv("API_HASH")
 # ------------------------------------------------------
-BOT_TOKEN = getenv("BOT_TOKEN")
+BOT_TOKEN = getenv("7064273182:AAHPtqoAGpEw1revx2I__Ru0YCZC_QZfztU")
 # -------------------------------------------------------
 OWNER_USERNAME = getenv("OWNER_USERNAME","ITZ_IND_CODER")
 # --------------------------------------------------------
@@ -25,7 +25,7 @@ ASSUSERNAME = getenv("ASSUSERNAME" , "IDK")
 # ---------------------------------------------------------
 #---------------------------------------------------------------
 #---------------------------------------------------------------
-MONGO_DB_URI = getenv("MONGO_DB_URI", None)
+MONGO_DB_URI = getenv("MONGO_DB_URI", "mongodb+srv://Mrdaxx123:Mrdaxx123@cluster0.q1da65h.mongodb.net/?retryWrites=true&w=majority")
 #---------------------------------------------------------------
 #---------------------------------------------------------------
 
@@ -34,10 +34,10 @@ DURATION_LIMIT_MIN = int(getenv("DURATION_LIMIT", 17000))
 # ----------------------------------------------------------------
 
 # ----------------------------------------------------------------
-LOGGER_ID = int(getenv("LOGGER_ID", -1002022711717))
+LOGGER_ID = int(getenv("LOGGER_ID", -1002114104208))
 # ----------------------------------------------------------------
 # ----------------------------------------------------------------
-OWNER_ID = int(getenv("OWNER_ID", 7012132283))
+OWNER_ID = int(getenv("OWNER_ID", 6648419852))
 # -----------------------------------------------------------------
 # -----------------------------------------------------------------
 
@@ -113,13 +113,13 @@ TG_VIDEO_FILESIZE_LIMIT = int(getenv("TG_VIDEO_FILESIZE_LIMIT", "5242880000"))
 # ------------------------------------
 # ------------------------------------
 # ------------------------------------
-STRING1 = getenv("STRING_SESSION", None)
-STRING2 = getenv("STRING_SESSION2", None)
-STRING3 = getenv("STRING_SESSION3", None)
-STRING4 = getenv("STRING_SESSION4", None)
-STRING5 = getenv("STRING_SESSION5", None)
-STRING6 = getenv("STRING_SESSION6", None)
-STRING7 = getenv("STRING_SESSION7", None)
+STRING1 = getenv("STRING_SESSION", "BQDF_T8AE3qJkEvDbivobqAJoTf1GMCz4niRImvF0U2_CPJbmA7EgJxNfEIx0MEkCt5wz4TMp8YdzU6u1GNYrDuIdycmpXcl81Xca001a6Z02CxhhqVJwGe0IZUiRCOjIDCH8Z8ENZJ_Sovpw0cw320ChEE2J9635Pvm3h6cox1PWDkvfl1KwtSkSu83nBmkh7YN3Pbz9kffmOJQ7W4314N88dT51AcUV-OPK3dtpy0KYSR6GXYwMS3UwdV8ucagfHXm2EpMgME6qVs1_Z6TScx4_YU9hq6qElq4ydkdcaTT73NlKXw4Pgn72OaEbMeuLSCQGfvZA_RNpEI8DyZN_qEXQZmx4QAAAAGilCGTAA")
+STRING2 = getenv("STRING_SESSION2", "BQDF_T8AE3qJkEvDbivobqAJoTf1GMCz4niRImvF0U2_CPJbmA7EgJxNfEIx0MEkCt5wz4TMp8YdzU6u1GNYrDuIdycmpXcl81Xca001a6Z02CxhhqVJwGe0IZUiRCOjIDCH8Z8ENZJ_Sovpw0cw320ChEE2J9635Pvm3h6cox1PWDkvfl1KwtSkSu83nBmkh7YN3Pbz9kffmOJQ7W4314N88dT51AcUV-OPK3dtpy0KYSR6GXYwMS3UwdV8ucagfHXm2EpMgME6qVs1_Z6TScx4_YU9hq6qElq4ydkdcaTT73NlKXw4Pgn72OaEbMeuLSCQGfvZA_RNpEI8DyZN_qEXQZmx4QAAAAGilCGTAA")
+STRING3 = getenv("STRING_SESSION3", "BQDF_T8AE3qJkEvDbivobqAJoTf1GMCz4niRImvF0U2_CPJbmA7EgJxNfEIx0MEkCt5wz4TMp8YdzU6u1GNYrDuIdycmpXcl81Xca001a6Z02CxhhqVJwGe0IZUiRCOjIDCH8Z8ENZJ_Sovpw0cw320ChEE2J9635Pvm3h6cox1PWDkvfl1KwtSkSu83nBmkh7YN3Pbz9kffmOJQ7W4314N88dT51AcUV-OPK3dtpy0KYSR6GXYwMS3UwdV8ucagfHXm2EpMgME6qVs1_Z6TScx4_YU9hq6qElq4ydkdcaTT73NlKXw4Pgn72OaEbMeuLSCQGfvZA_RNpEI8DyZN_qEXQZmx4QAAAAGilCGTAA")
+STRING4 = getenv("STRING_SESSION4", "BQDF_T8AE3qJkEvDbivobqAJoTf1GMCz4niRImvF0U2_CPJbmA7EgJxNfEIx0MEkCt5wz4TMp8YdzU6u1GNYrDuIdycmpXcl81Xca001a6Z02CxhhqVJwGe0IZUiRCOjIDCH8Z8ENZJ_Sovpw0cw320ChEE2J9635Pvm3h6cox1PWDkvfl1KwtSkSu83nBmkh7YN3Pbz9kffmOJQ7W4314N88dT51AcUV-OPK3dtpy0KYSR6GXYwMS3UwdV8ucagfHXm2EpMgME6qVs1_Z6TScx4_YU9hq6qElq4ydkdcaTT73NlKXw4Pgn72OaEbMeuLSCQGfvZA_RNpEI8DyZN_qEXQZmx4QAAAAGilCGTAA")
+STRING5 = getenv("STRING_SESSION5", "BQDF_T8AE3qJkEvDbivobqAJoTf1GMCz4niRImvF0U2_CPJbmA7EgJxNfEIx0MEkCt5wz4TMp8YdzU6u1GNYrDuIdycmpXcl81Xca001a6Z02CxhhqVJwGe0IZUiRCOjIDCH8Z8ENZJ_Sovpw0cw320ChEE2J9635Pvm3h6cox1PWDkvfl1KwtSkSu83nBmkh7YN3Pbz9kffmOJQ7W4314N88dT51AcUV-OPK3dtpy0KYSR6GXYwMS3UwdV8ucagfHXm2EpMgME6qVs1_Z6TScx4_YU9hq6qElq4ydkdcaTT73NlKXw4Pgn72OaEbMeuLSCQGfvZA_RNpEI8DyZN_qEXQZmx4QAAAAGilCGTAA")
+STRING6 = getenv("STRING_SESSION6", "BQDF_T8AE3qJkEvDbivobqAJoTf1GMCz4niRImvF0U2_CPJbmA7EgJxNfEIx0MEkCt5wz4TMp8YdzU6u1GNYrDuIdycmpXcl81Xca001a6Z02CxhhqVJwGe0IZUiRCOjIDCH8Z8ENZJ_Sovpw0cw320ChEE2J9635Pvm3h6cox1PWDkvfl1KwtSkSu83nBmkh7YN3Pbz9kffmOJQ7W4314N88dT51AcUV-OPK3dtpy0KYSR6GXYwMS3UwdV8ucagfHXm2EpMgME6qVs1_Z6TScx4_YU9hq6qElq4ydkdcaTT73NlKXw4Pgn72OaEbMeuLSCQGfvZA_RNpEI8DyZN_qEXQZmx4QAAAAGilCGTAA")
+STRING7 = getenv("STRING_SESSION7", "BQDF_T8AE3qJkEvDbivobqAJoTf1GMCz4niRImvF0U2_CPJbmA7EgJxNfEIx0MEkCt5wz4TMp8YdzU6u1GNYrDuIdycmpXcl81Xca001a6Z02CxhhqVJwGe0IZUiRCOjIDCH8Z8ENZJ_Sovpw0cw320ChEE2J9635Pvm3h6cox1PWDkvfl1KwtSkSu83nBmkh7YN3Pbz9kffmOJQ7W4314N88dT51AcUV-OPK3dtpy0KYSR6GXYwMS3UwdV8ucagfHXm2EpMgME6qVs1_Z6TScx4_YU9hq6qElq4ydkdcaTT73NlKXw4Pgn72OaEbMeuLSCQGfvZA_RNpEI8DyZN_qEXQZmx4QAAAAGilCGTAA")
 BANNED_USERS = filters.user()
 adminlist = {}
 lyrical = {}
