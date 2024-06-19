@@ -9,23 +9,23 @@ from pyrogram import filters
 load_dotenv()
 # ------------------------------------
 # -----------------------------------------------------
-API_ID = int(getenv("API_ID"))
-API_HASH = getenv("API_HASH")
+API_ID = int(getenv("29426486"))
+API_HASH = getenv("d71ad4ec048ab41677a1a439b21ff0c9")
 # ------------------------------------------------------
-BOT_TOKEN = getenv("7064273182:AAHPtqoAGpEw1revx2I__Ru0YCZC_QZfztU")
+BOT_TOKEN = getenv("6965255627:AAGHAspJSX01m1vaKfp6faZdWRJg-hDQtKg")
 # -------------------------------------------------------
-OWNER_USERNAME = getenv("OWNER_USERNAME","ITZ_IND_CODER")
+OWNER_USERNAME = getenv("OWNER_USERNAME","TY3052432")
 # --------------------------------------------------------
-BOT_USERNAME = getenv("BOT_USERNAME" , "DevilXmusicrobot")
+BOT_USERNAME = getenv("BOT_USERNAME" , "ItxmeTY4467_bot")
 # --------------------------------------------------------
-BOT_NAME = getenv("BOT_NAME" , "DEVIL")
+BOT_NAME = getenv("BOT_NAME" , "ItsmeTY")
 # ---------------------------------------------------------
 ASSUSERNAME = getenv("ASSUSERNAME" , "IDK")
 # ---------------------------------------------------------
 # ---------------------------------------------------------
 #---------------------------------------------------------------
 #---------------------------------------------------------------
-MONGO_DB_URI = getenv("MONGO_DB_URI", None)
+MONGO_DB_URI = getenv("mongodb+srv://hassanaliarain406:Vl8FypcwIbj5ElKA@cluster0.5syj88e.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0", None)
 #---------------------------------------------------------------
 #---------------------------------------------------------------
 
